@@ -32,7 +32,7 @@ public class PasswordGenerator {
 	
 	// Generated ASCII Welcome Message
 	public void welcomeMessage() {
-		int width = 200;
+		int width = 180;
         int height = 15;
 		
 		BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
@@ -42,7 +42,7 @@ public class PasswordGenerator {
 		Graphics2D graphics2D = (Graphics2D) graphics;
 		graphics2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, 
 								RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-		graphics2D.drawString("PASSWORD GENERATOR", 12, 12);
+		graphics2D.drawString("PASSWORD GENERATOR", 15, 12);
 		
 		for (int y = 0; y < height; y++) {
             StringBuilder sb = new StringBuilder();
